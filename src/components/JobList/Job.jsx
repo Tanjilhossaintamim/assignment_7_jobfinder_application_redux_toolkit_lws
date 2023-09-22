@@ -1,7 +1,8 @@
 import { useNavigate } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const Job = ({ job }) => {
-  const { id, type, title, salary, deadline } = job || {};
+  const { type, title, salary, deadline } = job || {};
   const navigate = useNavigate();
   const handelEdit = () => {
     navigate("/edit-job");
@@ -55,6 +56,9 @@ const Job = ({ job }) => {
       </div>
     </div>
   );
+};
+Job.propTypes = {
+  job: PropTypes.object,
 };
 
 export default Job;

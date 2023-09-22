@@ -41,6 +41,20 @@
       "salary": "18000",
       "deadline": "2023-12-31",
       "id": 7
+    },
+    {
+      "title": "Software Engineer",
+      "type": "Remote",
+      "salary": "80000",
+      "deadline": "2023-09-27",
+      "id": 8
+    },
+    {
+      "title": "MERN Stack Developer",
+      "type": "Internship",
+      "salary": "5000",
+      "deadline": "2023-09-19",
+      "id": 9
     }
   ]
 }
