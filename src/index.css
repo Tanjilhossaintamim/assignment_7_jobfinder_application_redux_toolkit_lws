@@ -872,6 +872,10 @@ nav a.active {
   font-weight: 600;
 }
 
+.error {
+  color: red;
+}
+
 .sub-menu {
   margin-left: -1px;
   display: block;
