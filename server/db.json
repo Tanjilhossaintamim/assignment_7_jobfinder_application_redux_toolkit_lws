@@ -48,13 +48,6 @@
       "salary": 18000,
       "deadline": "2023-12-31",
       "id": 7
-    },
-    {
-      "id": 8,
-      "title": "Social Media Manager",
-      "type": "Full Time",
-      "salary": 25455,
-      "deadline": "2023-09-04"
     }
   ]
 }
