@@ -8,6 +8,7 @@ import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./redux/app/store.js";
+import EditValue from "./customroute/EditValue.jsx";
 
 const router = createBrowserRouter([
   {
@@ -23,8 +24,12 @@ const router = createBrowserRouter([
         element: <AddJob />,
       },
       {
-        path: "/edit-job",
-        element: <EditJob />,
+        path: "/edit-job/:JobName",
+        element: (
+          <EditValue>
+            <EditJob />
+          </EditValue>
+        ),
       },
     ],
   },

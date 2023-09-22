@@ -10,7 +10,7 @@ const Job = ({ job }) => {
 
   const handelEdit = () => {
     dispatch(editActive(job));
-    navigate("/edit-job");
+    navigate(`/edit-job/${title.split(" ").join("_")}`);
   };
   const handelDelete = () => {
     dispatch(deletejob(id));
