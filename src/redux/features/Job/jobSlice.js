@@ -70,13 +70,13 @@ const jobSlice = createSlice({
 
             })
             .addCase(deletejob.pending, (state) => {
-                state.isLoading = true;
+                // state.isLoading = true;
                 state.isError = false
             })
             .addCase(deletejob.fulfilled, (state, action) => {
                 state.isError = false;
                 state.isLoading = false;
-                state.jobs = state.jobs.filter(job => job.id != action.payload.id);
+                state.jobs = state.jobs.filter(job => job.id != action.meta.arg);
             })
             .addCase(deletejob.rejected, (state, action) => {
                 state.isLoading = false;
