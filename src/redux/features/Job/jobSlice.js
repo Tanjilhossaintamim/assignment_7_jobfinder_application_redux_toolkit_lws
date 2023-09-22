@@ -6,7 +6,10 @@ const initialState = {
     isError: false,
     jobs: [],
     error: '',
-    editing: {}
+    editing: {},
+    type: '',
+    priceSorttype: '',
+    searchValue: "",
 }
 
 
@@ -19,6 +22,15 @@ const jobSlice = createSlice({
         },
         editInactive: (state) => {
             state.editing = {}
+        },
+        setType: (state, action) => {
+            state.type = action.payload
+        },
+        setPriceSortType: (state, action) => {
+            state.priceSorttype = action.payload
+        },
+        setSearchValue: (state, action) => {
+            state.searchValue = action.payload
         }
     },
     extraReducers: (builder) => {
@@ -61,7 +73,9 @@ const jobSlice = createSlice({
                 state.isError = false;
                 state.isLoading = false;
                 const findUpdatedIndex = state.jobs.findIndex(job => job.id == action.payload.id);
+
                 state.jobs[findUpdatedIndex] = action.payload;
+
             })
             .addCase(updateJob.rejected, (state, action) => {
                 state.isLoading = false;
@@ -111,6 +125,6 @@ export const deletejob = createAsyncThunk('job/deleteJob', async (id) => {
 
 
 
-export const { editActive, editInactive } = jobSlice.actions;
+export const { editActive, editInactive, setType, setPriceSortType, setSearchValue } = jobSlice.actions;
 
 export default jobSlice.reducer;

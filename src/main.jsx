@@ -4,11 +4,11 @@ import App from "./App.jsx";
 import AddJob from "./pages/AddJob.jsx";
 import EditJob from "./pages/EditJob.jsx";
 import Home from "./pages/Home.jsx";
-import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./redux/app/store.js";
 import EditValue from "./customroute/EditValue.jsx";
+import "./index.css";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +17,18 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/remote",
+        element: <Home />,
+      },
+      {
+        path: "/internship",
+        element: <Home />,
+      },
+      {
+        path: "/fulltime",
         element: <Home />,
       },
       {

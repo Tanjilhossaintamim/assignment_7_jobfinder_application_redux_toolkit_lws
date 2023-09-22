@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Junior Executive",
-      "type": "Internship",
+      "type": "Full Time",
       "salary": 10000,
       "deadline": "2024-12-31"
     },
@@ -48,6 +48,13 @@
       "salary": 18000,
       "deadline": "2023-12-31",
       "id": 7
+    },
+    {
+      "id": 8,
+      "title": "Social Media Manager",
+      "type": "Full Time",
+      "salary": 25455,
+      "deadline": "2023-09-04"
     }
   ]
 }

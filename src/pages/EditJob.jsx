@@ -140,7 +140,7 @@ const EditJob = () => {
                 type="submit"
                 id="lws-submit"
                 className="cursor-pointer btn btn-primary w-fit"
-                disabled={editing.id == undefined}
+                disabled={editing.id == undefined || isLoading}
               >
                 Edit
               </button>
