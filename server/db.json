@@ -1,58 +1,58 @@
 {
   "jobs": [
     {
-      "title": "DevOps Engineer",
+      "id": 2,
+      "title": "Software Engineer",
       "type": "Internship",
-      "salary": "25002",
-      "deadline": "2024-12-31",
-      "id": 2
+      "salary": 25000,
+      "deadline": "2024-12-31"
     },
     {
       "title": "QA Engineer",
       "type": "Full Time",
-      "salary": "15000",
+      "salary": 15000,
       "deadline": "2023-12-31",
       "id": 3
     },
     {
       "title": "Product Manager",
       "type": "Remote",
-      "salary": "18000",
+      "salary": 18000,
       "deadline": "2023-12-31",
       "id": 4
     },
     {
       "title": "Social Media Manager",
       "type": "Internship",
-      "salary": "20000",
+      "salary": 20000,
       "deadline": "2023-11-30",
       "id": 5
     },
     {
       "title": "Android App Developer",
       "type": "Remote",
-      "salary": "35000",
+      "salary": 35000,
       "deadline": "2023-12-31",
       "id": 6
     },
     {
       "title": "Full Stack Developer",
       "type": "Internship",
-      "salary": "18000",
+      "salary": 18000,
       "deadline": "2023-12-31",
       "id": 7
     },
     {
       "title": "Software Engineer",
       "type": "Remote",
-      "salary": "80000",
+      "salary": 80000,
       "deadline": "2023-09-27",
       "id": 8
     },
     {
       "title": "MERN Stack Developer",
       "type": "Internship",
-      "salary": "5000",
+      "salary": 5000,
       "deadline": "2023-09-19",
       "id": 9
     }

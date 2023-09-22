@@ -19,7 +19,7 @@ const AddJob = () => {
   };
   const handelSubmit = (e) => {
     e.preventDefault();
-    dispatch(postJob({ title, type, salary, deadline }));
+    dispatch(postJob({ title, type, salary: Number(salary), deadline }));
     if (!isLoading && !isError) {
       resetForm();
       navigate("/");

@@ -1,12 +1,19 @@
 import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
+import { useDispatch } from "react-redux";
+import { editActive } from "../../redux/features/Job/jobSlice";
 
 const Job = ({ job }) => {
   const { type, title, salary, deadline } = job || {};
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  
   const handelEdit = () => {
+    dispatch(editActive(job));
     navigate("/edit-job");
   };
+
   return (
     <div className="lws-single-job">
       <div className="flex-1 min-w-0">
