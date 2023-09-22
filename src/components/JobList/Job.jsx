@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
 import { useDispatch } from "react-redux";
 import { deletejob, editActive } from "../../redux/features/Job/jobSlice";
+import { numberWithCommas } from "../../utils/thousandsCommaseparator";
 
 const Job = ({ job }) => {
   const { id, type, title, salary, deadline } = job || {};
@@ -36,7 +37,7 @@ const Job = ({ job }) => {
           </div>
           <div className="lws-salary">
             <i className="fa-solid fa-bangladeshi-taka-sign text-slate-400 text-lg mr-1.5"></i>
-            BDT {salary}
+            BDT {numberWithCommas(salary)}
           </div>
           <div className="lws-deadline">
             <i className="fa-regular fa-calendar text-slate-400 text-lg mr-1.5"></i>
